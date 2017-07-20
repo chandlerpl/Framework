@@ -1,0 +1,10 @@
+name: PluginName
+main: com.chandlerpl.framework.MainClass
+version: 0.1
+author: chandlerpl
+depend: []
+authors: []
+
+commands:
+  
+permissions:
