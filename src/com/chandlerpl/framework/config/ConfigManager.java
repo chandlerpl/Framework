@@ -7,7 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-import com.chandlerpl.framework.MainClass;
+import com.chandlerpl.framework.Main;
 
 import net.md_5.bungee.api.ChatColor;
 
@@ -37,15 +37,15 @@ public class ConfigManager {
 		}
 		ConfigManager.defaultConfig.reload();
 		System.out.println(ChatColor.GREEN + "Reload complete");
-		if(MainClass.config.get().getBoolean("debug")) {
-			System.out.println(ChatColor.GOLD + "The MainClass is in debug mode!");
-		}
+		//if(Main.config.get().getBoolean("debug")) {
+		//	System.out.println(ChatColor.GOLD + "The MainClass is in debug mode!");
+		//}
 		for(Player player : Bukkit.getOnlinePlayers()) {
 			if(player.isOp()) {
-				player.sendMessage(ChatColor.GREEN + "MainClass reload complete, version: " + MainClass.instance.getDescription().getVersion());
-				if(MainClass.config.get().getBoolean("debug")) {
-					player.sendMessage(ChatColor.GOLD + "The MainClass is in debug mode!");
-				}
+				//player.sendMessage(ChatColor.GREEN + "MainClass reload complete, version: " + MainClass.instance.getDescription().getVersion());
+				//if(Main.config.get().getBoolean("debug")) {
+				//	player.sendMessage(ChatColor.GOLD + "The MainClass is in debug mode!");
+				//}
 			}
 		}
 	}

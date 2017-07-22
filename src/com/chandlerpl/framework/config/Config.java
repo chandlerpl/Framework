@@ -5,17 +5,17 @@ import java.io.File;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import com.chandlerpl.framework.MainClass;
+import com.chandlerpl.framework.Main;
 
 public class Config {
 
-	private MainClass plugin;
+	private Main plugin;
 
 	private File file;
 	private FileConfiguration config;
 
 	public Config(File file) {
-		this.plugin = MainClass.instance;
+		this.plugin = Main.instance;
 		this.file = new File(plugin.getDataFolder() + File.separator + file);
 		this.config = YamlConfiguration.loadConfiguration(this.file);
 		reload();

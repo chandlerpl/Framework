@@ -1,10 +1,12 @@
-name: PluginName
-main: com.chandlerpl.framework.MainClass
+name: Framework
+main: com.chandlerpl.framework.Main
 version: 0.1
 author: chandlerpl
 depend: []
 authors: []
 
 commands:
-  
+  hole:
+    aliases: [hole]
+    usage: /<command>
 permissions:
